@@ -1,2 +1,2 @@
 # website-redux
-Rebuilding the personal website with AWS Amplify and ReactJS
+Rebuilding personal website with AWS Amplify and ReactJS
