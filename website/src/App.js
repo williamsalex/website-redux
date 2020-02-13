@@ -5,6 +5,7 @@ import Navbar from './Navbar.js'
 import Header from './Header.js'
 import Sidebar from './Sidebar.js'
 import SelectiveRender from './SelectiveRender.js'
+import { loadReCaptcha } from 'react-recaptcha-google'
 
 export default class App extends Component {
 
@@ -99,7 +100,9 @@ export default class App extends Component {
     ]
   }
   
-
+  componentDidMount(){
+    loadReCaptcha()
+  }
   handleClick = (e, {name}) => this.setState({activeItem: name})
 
   render(){
